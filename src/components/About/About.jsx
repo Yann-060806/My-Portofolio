@@ -35,7 +35,6 @@ const About = () => {
         </h1>
 
         <Row className="align-items-center">
-          {/* FOTO */}
           <Col md="5" className="text-center mb-4">
             <img
               src={profile}
@@ -49,7 +48,6 @@ const About = () => {
             />
           </Col>
 
-          {/* TEXT */}
           <Col md="7">
             <h2 className="fw-bold mb-3">
               Halo, saya{" "}
@@ -72,7 +70,6 @@ const About = () => {
               yang efisien dan berkualitas.
             </p>
 
-            {/* SKILLS */}
             <div className="mt-4">
               {skills.map((skill) => (
                 <Badge
@@ -89,7 +86,6 @@ const About = () => {
           </Col>
         </Row>
 
-        {/* STATS */}
         <Row className="mt-5">
           {stats.map((item) => (
             <Col md="3" key={item.label} className="mb-4">
