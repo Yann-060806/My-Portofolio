@@ -13,7 +13,6 @@ const Resume = () => {
       }}
     >
       <Container>
-        {/* TITLE */}
         <h1 className="fw-bold text-center mb-2">
           Resume <span className="text-success">Saya</span>
         </h1>
@@ -23,7 +22,6 @@ const Resume = () => {
         </p>
 
         <Row>
-          {/* EDUCATION */}
           <Col md="6">
             <h4 className="fw-bold mb-4 text-success d-flex align-items-center gap-2">
               <FaGraduationCap /> Pendidikan
@@ -64,7 +62,6 @@ const Resume = () => {
             </Card>
           </Col>
 
-          {/* EXPERIENCE */}
           <Col md="6">
             <h4 className="fw-bold mb-4 text-success d-flex align-items-center gap-2">
               <FaBriefcase /> Pengalaman
@@ -103,7 +100,6 @@ const Resume = () => {
           </Col>
         </Row>
 
-        {/* SKILLS */}
         <h3 className="fw-bold text-center mt-5 mb-4">
           Kemampuan <span className="text-success">Teknis</span>
         </h3>
