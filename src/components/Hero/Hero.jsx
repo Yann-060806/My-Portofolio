@@ -16,7 +16,6 @@ const Hero = () => {
     >
       <Container>
         <Row className="align-items-center">
-          {/* TEXT */}
           <Col md="6" className="mb-5 mb-md-0">
             <h6 className="text-success text-uppercase mb-3">
               Fullstack Web Developer
@@ -46,7 +45,6 @@ const Hero = () => {
             </div>
           </Col>
 
-          {/* IMAGE */}
           <Col md="6" className="text-center">
             <img
               src={profile}
