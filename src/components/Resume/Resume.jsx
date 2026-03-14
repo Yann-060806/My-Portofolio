@@ -16,6 +16,7 @@ const Resume = () => {
         <h1 className="fw-bold text-center mb-2">
           Resume <span className="text-success">Saya</span>
         </h1>
+
         <p className="text-center text-secondary mb-5">
           Ringkasan pendidikan, pengalaman, dan kemampuan teknis yang saya
           miliki.
@@ -38,25 +39,25 @@ const Resume = () => {
                 <hr style={{ borderColor: "#1f1f1f" }} />
 
                 <p className="text-light">
-                  Mendalami pengembangan aplikasi web modern dengan fokus pada
-                  frontend menggunakan React serta backend menggunakan Node.js
-                  dan Express.js. Mempelajari pembuatan REST API, manajemen
-                  database, serta praktik terbaik dalam pengembangan aplikasi.
+                  Fokus mempelajari pengembangan web modern mulai dari frontend
+                  menggunakan React.js hingga backend menggunakan Node.js,
+                  Express.js, dan database MySQL.
                 </p>
               </CardBody>
             </Card>
 
             <Card className="bg-dark text-white border-success">
               <CardBody>
-                <h5 className="fw-bold">Sekolah Menengah Atas</h5>
+                <h5 className="fw-bold">MA Quantum IDEA Bekasi</h5>
+                <span className="text-success fw-semibold">Jurusan IPA</span>
                 <p className="text-secondary">2021 - 2024</p>
 
                 <hr style={{ borderColor: "#1f1f1f" }} />
 
                 <p className="text-light">
-                  Mengembangkan kemampuan berpikir analitis dan mulai
-                  menumbuhkan ketertarikan dalam bidang teknologi serta
-                  pengembangan perangkat lunak.
+                  Menempuh pendidikan menengah atas jurusan Ilmu Pengetahuan
+                  Alam (IPA), sekaligus membangun pola pikir analitis yang
+                  menjadi dasar dalam memahami logika pemrograman dan teknologi.
                 </p>
               </CardBody>
             </Card>
@@ -70,15 +71,14 @@ const Resume = () => {
             <Card className="mb-4 bg-dark text-white border-success">
               <CardBody>
                 <h5 className="fw-bold">Fullstack Web Developer (Trainee)</h5>
-                <p className="text-secondary">2024 - Sekarang</p>
+                <p className="text-secondary">2025 - Sekarang</p>
 
                 <hr style={{ borderColor: "#1f1f1f" }} />
 
                 <p className="text-light">
-                  Mengembangkan aplikasi web responsif menggunakan React,
-                  membangun REST API dengan Node.js & Express, serta melakukan
-                  integrasi frontend dan backend untuk menghasilkan sistem yang
-                  terstruktur dan efisien.
+                  Mengembangkan aplikasi web menggunakan React.js, Node.js,
+                  Express.js, dan MySQL dengan pendekatan clean code dan REST
+                  API.
                 </p>
               </CardBody>
             </Card>
@@ -91,9 +91,8 @@ const Resume = () => {
                 <hr style={{ borderColor: "#1f1f1f" }} />
 
                 <p className="text-light">
-                  Membangun berbagai proyek seperti dashboard, sistem manajemen
-                  data, serta aplikasi berbasis API untuk meningkatkan pemahaman
-                  arsitektur aplikasi dan clean code.
+                  Membuat berbagai proyek seperti dashboard admin, CRUD system,
+                  autentikasi login, upload file, dan integrasi API.
                 </p>
               </CardBody>
             </Card>
@@ -124,7 +123,7 @@ const Resume = () => {
               <p className="fw-semibold mb-1">Express.js</p>
               <Progress value={75} color="success" className="mb-3" />
 
-              <p className="fw-semibold mb-1">REST API & Git</p>
+              <p className="fw-semibold mb-1">MySQL & Git</p>
               <Progress value={80} color="success" />
             </Col>
           </Row>

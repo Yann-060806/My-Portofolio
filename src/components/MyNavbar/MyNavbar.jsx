@@ -36,25 +36,27 @@ const MyNavbar = () => {
         borderBottom: "1px solid #1f1f1f",
       }}
     >
-      <Container className="d-flex align-items-center">
-        <NavbarBrand href="#home">
-          <img
-            src={profile}
-            alt="logo"
-            style={{
-              height: "45px",
-              width: "45px",
-              objectFit: "cover",
-              borderRadius: "50%",
-              border: "2px solid #00e676",
-            }}
-          />
-        </NavbarBrand>
+      <Container>
+        <div className="d-flex justify-content-between align-items-center w-100">
+          <NavbarBrand href="#home" className="m-0">
+            <img
+              src={profile}
+              alt="logo"
+              style={{
+                height: "45px",
+                width: "45px",
+                objectFit: "cover",
+                borderRadius: "50%",
+                border: "2px solid #00e676",
+              }}
+            />
+          </NavbarBrand>
 
-        <NavbarToggler onClick={toggle} />
+          <NavbarToggler onClick={toggle} />
+        </div>
 
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ms-auto align-items-center" navbar>
+          <Nav className="ms-auto align-items-center w-100 mt-3 mt-md-0" navbar>
             {menuItems.map((item) => (
               <NavItem key={item.id}>
                 <NavLink

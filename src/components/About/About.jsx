@@ -33,28 +33,38 @@ const About = () => {
         <h1 className="text-center fw-bold mb-5">
           Tentang <span className="text-success">Saya</span>
         </h1>
-
-        <Row className="align-items-center">
-          <Col md="5" className="text-center mb-4">
+        <Row className="align-items-center text-center text-md-start">
+          <Col md="5" className="mb-4">
             <img
               src={profile}
               alt="profile"
               className="img-fluid shadow"
               style={{
                 borderRadius: "20px",
-                maxWidth: "320px",
+                width: "clamp(220px, 70vw, 320px)",
                 border: "3px solid #00e676",
               }}
             />
           </Col>
 
           <Col md="7">
-            <h2 className="fw-bold mb-3">
+            <h2
+              className="fw-bold mb-3"
+              style={{
+                fontSize: "clamp(1.8rem, 5vw, 2.5rem)",
+              }}
+            >
               Halo, saya{" "}
               <span className="text-success">Hanzhallah Zaul Zulyan</span>
             </h2>
 
-            <p className="text-light">
+            <p
+              className="text-light mx-auto mx-md-0"
+              style={{
+                lineHeight: "1.8",
+                maxWidth: "650px",
+              }}
+            >
               Saya adalah seorang <strong>Fullstack Web Developer</strong> yang
               memiliki minat besar dalam membangun aplikasi web modern,
               responsif, dan scalable. Saya berfokus pada pengembangan antarmuka
@@ -63,21 +73,29 @@ const About = () => {
               <strong>Node.js dan Express.js</strong>.
             </p>
 
-            <p className="text-secondary">
+            <p
+              className="text-secondary mx-auto mx-md-0"
+              style={{
+                lineHeight: "1.8",
+                maxWidth: "650px",
+              }}
+            >
               Saat ini saya terus mengembangkan kemampuan teknis, memahami
               arsitektur aplikasi, serta menerapkan praktik terbaik dalam
               pengembangan perangkat lunak untuk menghasilkan solusi digital
               yang efisien dan berkualitas.
             </p>
 
-            <div className="mt-4">
+            <div className="mt-4 d-flex flex-wrap justify-content-center justify-content-md-start">
               {skills.map((skill) => (
                 <Badge
                   key={skill}
                   color="success"
                   pill
                   className="me-2 mb-2 px-3 py-2"
-                  style={{ fontSize: "14px" }}
+                  style={{
+                    fontSize: "14px",
+                  }}
                 >
                   {skill}
                 </Badge>
@@ -88,9 +106,9 @@ const About = () => {
 
         <Row className="mt-5">
           {stats.map((item) => (
-            <Col md="3" key={item.label} className="mb-4">
+            <Col xs="6" md="3" key={item.label} className="mb-4">
               <Card
-                className="text-center bg-dark text-white border-success"
+                className="text-center bg-dark text-white border-success h-100"
                 style={{
                   borderRadius: "18px",
                   border: "1px solid #1f1f1f",
@@ -98,7 +116,12 @@ const About = () => {
               >
                 <CardBody>
                   <h2 className="fw-bold text-success">{item.number}</h2>
-                  <p className="text-secondary mb-0">{item.label}</p>
+                  <p
+                    className="text-secondary mb-0"
+                    style={{ fontSize: "14px" }}
+                  >
+                    {item.label}
+                  </p>
                 </CardBody>
               </Card>
             </Col>
